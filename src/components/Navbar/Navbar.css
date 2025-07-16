@@ -1,0 +1,122 @@
+nav {
+    padding: 0 2%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-radius: 0 0 18px 18px;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.flex-div {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left .menu-icon {
+    width: 26px;
+    margin-right: 28px;
+    cursor: pointer;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+}
+
+.nav-left .menu-icon:hover {
+    opacity: 1;
+}
+
+.nav-left .logo {
+    width: 135px;
+}
+
+.nav-middle .search-box {
+    border: 1px solid #e0e0e0;
+    margin-right: 18px;
+    padding: 8px 16px;
+    border-radius: 25px;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    min-width: 320px;
+    transition: border 0.2s, background 0.2s;
+}
+
+.nav-middle .search-box:focus-within {
+    border: 1.5px solid #ed3833;
+    background: #fff;
+}
+
+.nav-middle .search-box input {
+    width: 260px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-size: 1rem;
+    color: #222;
+    padding: 4px 0;
+}
+
+.nav-middle .search-box img {
+    width: 18px;
+    margin-left: 10px;
+    opacity: 0.7;
+}
+
+.nav-right img {
+    width: 26px;
+    margin-right: 22px;
+    cursor: pointer;
+    opacity: 0.85;
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+.nav-right img:hover {
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+.nav-right .user-icon {
+    width: 38px;
+    border-radius: 50%;
+    margin-right: 0;
+    border: 2px solid #eee;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.2s, border 0.2s;
+}
+
+.nav-right .user-icon:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);
+    border: 2px solid #ed3833;
+}
+
+@media (max-width: 900px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .nav-right img {
+        display: none;
+    }
+
+    .nav-right .user-icon {
+        display: block;
+        width: 30px;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+    .nav-middle .mic-icon {
+        display: none;
+    }
+
+    .nav-middle .search-box input {
+        width: 100px;
+    }
+}
