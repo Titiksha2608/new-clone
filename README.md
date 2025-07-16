@@ -12,29 +12,7 @@ This project is a YouTube-inspired web application built with React and Vite. It
 - 📱 Responsive design (sidebar hides on small screens)
 - 🖼️ Asset management for images and videos
 
-## Project Structure
-
-```
-new-clone/
-├── public/                # Static assets
-├── src/
-│   ├── assets/            # Images, icons, and videos
-│   ├── components/        # Reusable UI components
-│   │   ├── Feed/
-│   │   ├── Navbar/
-│   │   ├── PlayVideo/
-│   │   ├── Recommended/
-│   │   └── sidebar/
-│   ├── pages/             # Page-level components (Home, Video)
-│   ├── App.jsx            # Main app component
-│   ├── main.jsx           # Entry point
-│   └── data.js            # Sample data
-├── index.html
-├── package.json
-├── vite.config.js
-└── README.md
-```
-
+  
 ## Getting Started
 
 ### Prerequisites
